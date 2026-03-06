@@ -247,3 +247,11 @@ window.addEventListener('load', () => {
         }
     });
 });
+
+window.addEventListener('load', () => {
+    const loader = document.querySelector('#loading-screen');
+    // Add a slight delay (e.g., 500ms) for a smoother transition
+    setTimeout(() => {
+        loader.classList.add('fade-out');
+    }, 500);
+});
